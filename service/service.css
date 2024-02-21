@@ -1,0 +1,389 @@
+body{
+    overflow-x: hidden;
+}
+/* NAVBAR STYLE */
+.navigation-bar{
+    display:flex;
+    justify-content: space-between;
+    padding:10px 100px;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width:80px
+}
+.logo h1{
+    font-size:36px;
+    color:#5F5F5F;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5px;
+}
+.bar-icon{
+    display:none;
+    position:absolute;
+    top:25px;
+    right:50px;
+    font-size:25px;
+    cursor:pointer;
+}
+.bar-icon:hover{
+    color:#F27C66
+}
+
+.navigation-links a{
+    text-decoration: none;
+    font-size:16px;
+    padding:25px;
+    color:#333;
+    font-weight:700;
+
+}
+.navigation-links a::after{
+    content: "|";
+    padding-left: 20px;
+    color: #c5b6b6;
+    font-size: 1em;
+}
+.navigation-links a:hover{
+    color:#f06a53;
+}
+.sign-in-button{
+    text-decoration: none;
+    color:#FFF;
+    font-size:18px;
+    padding: 5px 30px;
+    background-color: #F27C66;
+    border:2px solid  #F27C66;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius:5px ;
+    transition: all .8s;
+    font-weight:700
+  
+  }
+  .sign-in-button:hover{
+    color:#F27C66;
+    background-color:inherit;
+  }
+
+
+
+/* OVERLAY MENU STYLE */
+.overlay-menu{
+  background-color: rgba(1, 0, 8, 0.759);
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  z-index:1;
+  overflow-x: hidden;
+  transition: all .8s;
+} 
+ .overlay-navigation-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.overlay-navigation-links a{
+  color:#FFF;
+  text-decoration: none;
+  font-size:54px;
+  font-weight: 'Raleway', sans-serif;
+  transition: all .8s;
+}
+.overlay-navigation-links a:hover{
+ color:#FFF;
+ scale:1.1
+}
+.fa-circle-xmark{
+  position:absolute;
+  top:50px;
+  right:50px;
+  font-size:30px;
+  color:#fff;
+  cursor: pointer;
+}
+
+/* SERVICE SECTION */
+.service-intro{
+    background-image:url('https://www.truebackgroundchecks.com/images/slider/1.png');
+    height:70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:"Raleway", sans-serif;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color:#FFF;
+}
+.service-intro h1{
+    font-size:65px;
+    font-weight:550;
+}
+.service-intro p{
+    font-size:25px
+}
+
+/* WE OFFER SECTION */
+.we-offer{
+    padding:100px 150px;
+    font-family: "Raleway", sans-serif;
+}
+.we-offer h2{
+    padding-bottom:15px;
+}
+.we-offer a{
+    padding-top:25px;
+    text-decoration: none;
+    display:inline-block;
+    margin-right:10px;
+    color:rgb(68, 66, 66);
+}
+.we-offer a:hover{
+    color:#f06a53
+}
+
+/* COURSES PROGRAMS SECTION */
+.course-program{
+    padding: 100px 200px;
+    background-color: #313c47dd;
+    height:100%;
+    font-family: "Raleway", sans-serif;
+}
+.course-program h1{
+    color:#FFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.course-program-info{
+    padding-top:60px;
+   
+    
+}
+.course-info{
+    color:#FFF ;
+    padding:25px 0;
+    
+}
+.course-info .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.course-info h2{
+    padding-bottom:10px;
+}
+.course-info h4{
+    padding-bottom:20px
+}
+.course-program hr{
+    color:#c5b6b6
+}
+
+/* FIRST FOOTER SECTION */
+.first-footer{
+    background-color: #2d3339;
+    color:#b0b0b0;
+    padding:50px ;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    
+   
+   }
+   .footer-left-side,
+   .footer-center-side,
+   .footer-right-side{
+     margin-right:20px
+   }
+   .first-footer h4{
+     color:#FFF;
+     padding:15px ;
+     font-weight:500;
+     border-bottom-right-radius: 10px;
+     border-top-left-radius: 10px;
+     margin-bottom:20px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   .first-footer p{
+     font-size:18px
+   }
+   .first-footer .time{
+     margin-top: 10px;
+     color:rgb(220, 158, 44)
+   }
+   .footer-right-side input{
+     width:100%;
+     margin-bottom:15px;
+     padding:9px;
+     background-color: #262b2f;
+     border:none;
+     outline:none;
+     color:#b0b0b0;
+     border:1px solid rgb(89, 88, 88)
+   
+   }
+    #comment{
+     padding-bottom:70px
+   }
+   .footer-right-side button{
+     border:none;
+     outline: none;
+     padding:7px 40px;
+     border-bottom-right-radius: 5px;
+     border-top-left-radius: 5px;
+     border:1px solid #18bb7c;
+     color:#18bb7c;
+     background-color: inherit;
+   
+   }
+   
+   .footer-right-side button:hover{
+   background-color: #18bb7c;
+   color:#FFF;
+   
+   
+   }
+
+ /* FOOTER SECTION */
+ .footer{
+    padding:30px;
+    display:flex;
+    justify-content: space-between;
+    background-color: #1f2226;
+    font-family: 'Raleway', sans-serif;
+  }
+  .footer .copyright{
+    color:#FFF;
+  }
+  .footer .nav-links a{
+    text-decoration: none;
+    padding:20px;
+    color:#FFF
+  }
+  .nav-links a::after{
+    content: "|";
+    padding-left: 20px;
+    color: #c5b6b6;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+@media(max-width:1100px){
+    .navigation-links{
+        display:none;
+    }
+    .bar-icon{
+        display:block
+    }
+    .sign-in-button{
+        display: none;
+    }
+}
+@media(max-width:1200px){
+    .we-offer{
+        padding:100px
+    }
+}
+@media(max-width:1000px){
+    .we-offer{
+        padding:100px 50px;
+    }
+    .we-offer h2{
+        padding-bottom:5px;
+        font-size:30px
+    }
+    .we-offer p{
+        font-size:14px
+    }
+    .we-offer a{
+        padding-top:10px;
+        font-size:17px
+    }
+}
+@media(max-width:768px){
+    .we-offer{
+        padding:100px;
+    }
+    .we-offer h2{
+        padding-top:20px;
+    }
+    .navigation-bar{
+        padding:10px 30px;
+      }
+}
+
+@media(max-width:600px){
+    .we-offer{
+        padding:50px
+    }
+}
+/* course program media */
+@media(max-width:1300px){
+    .course-program{
+        padding:100px 150px;
+    }
+}
+@media(max-width:1200px)and (min-width:768px){
+    .course-program{
+        padding:100px;
+    }
+    .course-info h2{
+        padding-bottom:5px
+    }
+    .course-info h4{
+        padding-bottom: 10px;
+    }
+    .course-info p{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media(max-width:1000px)and (min-width:768px){
+    .course-info img{
+        width:320px;
+        height:200px
+    }
+}
+@media(max-width:850px){
+    .course-program{
+        padding:100px 50px;
+    }
+}
+@media(max-width:768px){
+    .course-program{
+        padding:100px;
+    }
+    .course-program-info h2{
+        padding-top:27px
+    }
+}
+@media(max-width:570px){
+    .course-program{
+        padding:100px 50px
+    }
+}
+@media(max-width:1150px){
+    .first-footer{
+      padding:50px 20px;
+    }
+    }
+    @media(max-width:990px){
+      .footer-left-side, .footer-center-side{
+        margin-bottom:30px
+      }
+    }
+
+
